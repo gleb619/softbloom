@@ -1,0 +1,361 @@
+<zk xmlns:n="http://www.w3.org/1999/xhtml">
+<div  apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm')@init('org.test.MyViewModel')"
+		validationMessages="@id('vmsgs')"
+		hflex="true" 
+		vflex="true">
+<!-- <timer running="@bind(vm.startLoad)"  delay="100"  repeats="false" onTimer="@command('initLoad')"/> -->
+
+<div class="row">
+        <div class="col-md-3 animated-panel zoomIn" style="animation-delay: 0.1s;">
+            <div class="hpanel">
+                <div class="panel-body">
+                    <div class="m-b-md">
+                        <n:h4>
+                            Filters
+                        </n:h4>
+                        <n:small>
+                            Filter your project basend on diferent options below.
+                        </n:small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="control-label">Employee salary:</label>
+	                    <div class="input-group">
+							<span class="input-group-btn">
+								<button class="btn btn-default">+</button>
+							</span>
+							<textbox class="form-control" placeholder="Salary amount" />
+							<span class="input-group-btn">
+								<button class="btn btn-default">-</button>
+							</span>
+						</div>
+					</div>
+                    
+                    <div class="form-group">
+                        <label class="control-label">Employee job:</label>
+							<!-- 
+	                    		value="@bind(vm.textToFilter)"
+	                    		onOK="@command('accept')"
+	                    	--> 
+	                    	
+
+	                    	<listbox mold="select" sclass="form-control">
+	                    		<listitem label="HR Specialist" />
+	                    		<listitem label="Bookkeeper &amp; Receptionist" />
+	                    		<listitem label="Sales and Service Specialist" />
+	                    		<listitem label="Janitor" />
+	                    		<listitem label="Big BOSS" />
+	                    	</listbox>
+
+					</div>
+					
+					<div class="form-group">
+                        <label class="control-label">Status:</label>
+                        <div class="input-group">
+                            <div class="checkbox checkbox-primary">
+                            	<checkbox />
+                                
+                                <label>
+                                    Completed
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-success">
+                            	<checkbox />
+                                <label>
+                                    Pending
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-success">
+                            	<checkbox />
+                                <label>
+                                    Cancel
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+					
+                    
+<!-- 
+                    <div class="form-group">
+                        <label class="control-label">Project date:</label>
+                        <div class="input-group date">
+                            <input type="text" class="form-control" value="10/06/2016">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Project value:</label>
+                        <div class="input-group bootstrap-touchspin">
+                            <span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-down" type="button">-</button></span><span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span><input id="demo1" type="text" name="demo1" value="50" class="form-control" style="display: block;"><span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span><span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-up" type="button">+</button></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Client:</label>
+                        <div class="input-group">
+                            <select class="form-control m-b" name="account">
+                                <option selected="">Company and Brothers</option>
+                                <option>Morgan &amp; Morgan Inc.</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Employees</label>
+                        <div class="input-group bootstrap-touchspin">
+                            <span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-down" type="button">-</button></span><span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span><input id="demo2" type="text" name="demo2" value="2" class="form-control" style="display: block;"><span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span><span class="input-group-btn"><button class="btn btn-default bootstrap-touchspin-up" type="button">+</button></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Status:</label>
+                        <div class="input-group">
+                            <div class="checkbox checkbox-primary">
+                                <input checked="" id="checkbox1" type="checkbox">
+                                <label for="checkbox1">
+                                    Completed
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-success">
+                                <input id="checkbox2" type="checkbox">
+                                <label for="checkbox2">
+                                    Pending
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-success">
+                                <input id="checkbox3" type="checkbox">
+                                <label for="checkbox3">
+                                    Cancel
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Tags:</label>
+                        <div class="input-group">
+                            <div class="select2-container select2-container-multi select2" id="s2id_autogen1"><ul class="select2-choices">  <li class="select2-search-choice">    <div>Branding</div>    <a href="#" class="select2-search-choice-close" tabindex="-1"></a></li><li class="select2-search-choice">    <div>Website</div>    <a href="#" class="select2-search-choice-close" tabindex="-1"></a></li><li class="select2-search-choice">    <div>Design</div>    <a href="#" class="select2-search-choice-close" tabindex="-1"></a></li><li class="select2-search-choice">    <div>Ilustration</div>    <a href="#" class="select2-search-choice-close" tabindex="-1"></a></li><li class="select2-search-choice">    <div>New</div>    <a href="#" class="select2-search-choice-close" tabindex="-1"></a></li><li class="select2-search-field">    <label for="s2id_autogen2" class="select2-offscreen"></label>    <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" id="s2id_autogen2" placeholder="" style="width: 34px;">  </li></ul><div class="select2-drop select2-drop-multi select2-display-none">   <ul class="select2-results">   <li class="select2-no-results">No matches found</li></ul></div></div><select class="select2" multiple="multiple" tabindex="-1" style="display: none;">
+                                <option selected="" value="Branding">Branding</option>
+                                <option selected="" value="Website">Website</option>
+                                <option selected="" value="Design">Design</option>
+                                <option selected="" value="Ilustration">Ilustration</option>
+                                <option selected="" value="New">New</option>
+                                <option value="Important">Important</option>
+                                <option value="External">External</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-success btn-block">Apply</button>
+ -->
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-md-9 animated-panel zoomIn" style="animation-delay: 0.2s;">
+        <!-- 
+            <div class="row">
+                <div class="col-lg-12 animated-panel zoomIn" style="animation-delay: 0.2s;">
+                    <div class="hpanel">
+                        <div class="panel-body">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Search projects..">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-12 animated-panel zoomIn" style="animation-delay: 0.3s;">
+
+                    <div class="hpanel filter-item">
+                        <a href="#">
+                        <div class="panel-body">
+                            <div class="pull-right text-right">
+                                    <small class="stat-label">Last week</small>
+                                <h4>$620,20 <i class="fa fa-level-up text-success"></i></h4>
+                            </div>
+                            <h4 class="m-b-xs">Desing project</h4>
+                            <p class="small">Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still</p>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="hpanel filter-item active">
+                        <a href="#">
+                            <div class="panel-body">
+                                <div class="pull-right text-right">
+                                    <small class="stat-label">Last week</small>
+                                    <h4>$140,70 <i class="fa fa-long-arrow-right text-info"></i></h4>
+                                </div>
+                                <h4 class="m-b-xs">Project manager app</h4>
+                                <p class="small">It is a long established fact that a reader will be distracted by the readable</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hpanel filter-item">
+                        <a href="#">
+                            <div class="panel-body">
+                                <div class="pull-right text-right">
+                                    <small class="stat-label">Last week</small>
+                                    <h4>$580,90 <i class="fa fa-level-down text-danger"></i></h4>
+                                </div>
+                                <h4 class="m-b-xs">New branding</h4>
+                                <p class="small">There are many variations of passages of Lorem Ipsum available, </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hpanel filter-item">
+                        <a href="#">
+                            <div class="panel-body">
+                                <div class="pull-right text-right">
+                                    <small class="stat-label">Last week</small>
+                                    <h4>$170,20 <i class="fa fa-level-up text-warning"></i></h4>
+                                </div>
+                                <h4 class="m-b-xs">Website project</h4>
+                                <p class="small">All the Lorem Ipsum generators on the Internet tend to repeat</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hpanel filter-item">
+                        <a href="#">
+                            <div class="panel-body">
+                                <div class="pull-right text-right">
+                                    <small class="stat-label">Last week</small>
+                                    <h4>$240,70 <i class="fa fa-level-up text-success"></i></h4>
+                                </div>
+                                <h4 class="m-b-xs">Ilustration project</h4>
+                                <p class="small">Making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hpanel filter-item">
+                        <a href="#">
+                            <div class="panel-body">
+                                <div class="pull-right text-right">
+                                    <small class="stat-label">Last week</small>
+                                    <h4>$620,20 <i class="fa fa-level-up text-success"></i></h4>
+                                </div>
+                                <h4 class="m-b-xs">Desing project</h4>
+                                <p class="small">Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hpanel filter-item">
+                        <a href="#">
+                            <div class="panel-body">
+                                <div class="pull-right text-right">
+                                    <small class="stat-label">Last week</small>
+                                    <h4>$140,70 <i class="fa fa-long-arrow-right text-info"></i></h4>
+                                </div>
+                                <h4 class="m-b-xs">Project manager app</h4>
+                                <p class="small">It is a long established fact that a reader will be distracted by the readable</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hpanel filter-item">
+                        <a href="#">
+                            <div class="panel-body">
+                                <div class="pull-right text-right">
+                                    <small class="stat-label">Last week</small>
+                                    <h4>$580,90 <i class="fa fa-level-down text-danger"></i></h4>
+                                </div>
+                                <h4 class="m-b-xs">New branding</h4>
+                                <p class="small">There are many variations of passages of Lorem Ipsum available, </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hpanel filter-item">
+                        <a href="#">
+                            <div class="panel-body">
+                                <div class="pull-right text-right">
+                                    <small class="stat-label">Last week</small>
+                                    <h4>$170,20 <i class="fa fa-level-up text-warning"></i></h4>
+                                </div>
+                                <h4 class="m-b-xs">Website project</h4>
+                                <p class="small">All the Lorem Ipsum generators on the Internet tend to repeat</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hpanel filter-item">
+                        <a href="#">
+                            <div class="panel-body">
+                                <div class="pull-right text-right">
+                                    <small class="stat-label">Last week</small>
+                                    <h4>$240,70 <i class="fa fa-level-up text-success"></i></h4>
+                                </div>
+                                <h4 class="m-b-xs">Ilustration project</h4>
+                                <p class="small">Making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hpanel filter-item">
+                        <a href="#">
+                            <div class="panel-body">
+                                <div class="pull-right text-right">
+                                    <small class="stat-label">Last week</small>
+                                    <h4>$620,20 <i class="fa fa-level-up text-success"></i></h4>
+                                </div>
+                                <h4 class="m-b-xs">Desing project</h4>
+                                <p class="small">Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hpanel filter-item">
+                        <a href="#">
+                            <div class="panel-body">
+                                <div class="pull-right text-right">
+                                    <small class="stat-label">Last week</small>
+                                    <h4>$140,70 <i class="fa fa-long-arrow-right text-info"></i></h4>
+                                </div>
+                                <h4 class="m-b-xs">Project manager app</h4>
+                                <p class="small">It is a long established fact that a reader will be distracted by the readable</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hpanel filter-item">
+                        <a href="#">
+                            <div class="panel-body">
+                                <div class="pull-right text-right">
+                                    <small class="stat-label">Last week</small>
+                                    <h4>$580,90 <i class="fa fa-level-down text-danger"></i></h4>
+                                </div>
+                                <h4 class="m-b-xs">New branding</h4>
+                                <p class="small">There are many variations of passages of Lorem Ipsum available, </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hpanel filter-item">
+                        <a href="#">
+                            <div class="panel-body">
+                                <div class="pull-right text-right">
+                                    <small class="stat-label">Last week</small>
+                                    <h4>$170,20 <i class="fa fa-level-up text-warning"></i></h4>
+                                </div>
+                                <h4 class="m-b-xs">Website project</h4>
+                                <p class="small">All the Lorem Ipsum generators on the Internet tend to repeat</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+             -->
+        </div>
+    </div>
+
+</div>
+</zk>

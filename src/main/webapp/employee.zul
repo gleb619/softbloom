@@ -1,0 +1,66 @@
+<?page title="Dashboard - ZK Admin"?>
+<?page viewport="width=device-width, initial-scale=1.0"?>
+
+
+<?link rel="stylesheet" href="resources/vendor/fontawesome/css/font-awesome.css" ?>
+<?link rel="stylesheet" href="resources/vendor/metisMenu/dist/metisMenu.css" ?>
+<?link rel="stylesheet" href="resources/vendor/animate.css/animate.css" ?>
+<?link rel="stylesheet" href="resources/vendor/bootstrap/dist/css/bootstrap.css" ?>
+
+<?link rel="stylesheet" href="resources/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" ?>
+<?link rel="stylesheet" href="resources/fonts/pe-icon-7-stroke/css/helper.css" ?>
+<?link rel="stylesheet" href="resources/styles/style.css"?>
+<?link rel="stylesheet" href="resources/styles/project.css"?>
+
+<zk>
+	<html>
+		<div class="splash">
+			<div class="color-line"></div>
+			<div class="splash-title">
+				<h1>TestApp</h1>
+				<p>
+					Please wait.
+				</p>
+				<img src="resources/images/loading-bars.svg" width="64" height="64" />
+			</div>
+		</div>
+		<!--[if lt IE 7]><p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+	</html>
+
+	<include src="header.zul" />
+	<include src="menu.zul" />
+
+	<div class="wrapper">
+		<include src="list/employes.zul" />
+		<include src="sidebar.zul" />
+		
+		<div class="footer">
+			<span class="pull-right">Example text</span>
+			Company 2015-2020
+		</div>
+		
+	</div>
+
+	<script src="resources/vendor/jquery/dist/jquery.min.js"></script>
+	<script src="resources/vendor/jquery-ui/jquery-ui.min.js"></script>
+	<script src="resources/vendor/slimScroll/jquery.slimscroll.min.js"></script>
+	<script src="resources/vendor/bootstrap/dist/js/bootstrap.min.js"> </script>
+	<script src="resources/vendor/jquery-flot/jquery.flot.js"></script>
+	<script src="resources/vendor/jquery-flot/jquery.flot.resize.js"> </script>
+	<script src="resources/vendor/jquery-flot/jquery.flot.pie.js"> </script>
+	<script src="resources/vendor/flot.curvedlines/curvedLines.js"> </script>
+	<script src="resources/vendor/jquery.flot.spline/index.js"></script>
+	<script src="resources/vendor/metisMenu/dist/metisMenu.min.js"> </script>
+	<script src="resources/vendor/iCheck/icheck.min.js"></script>
+	<script src="resources/vendor/peity/jquery.peity.min.js"></script>
+	<!-- 
+	<script src="resources/vendor/sparkline/index.js"></script>
+ 	-->
+	
+	<script src="resources/scripts/config.js"></script>
+	<script src="resources/scripts/charts.js"></script>
+
+	<script>
+	</script>
+
+</zk>
