@@ -1076,6 +1076,7 @@ fieldset[disabled] .btn-primary2.active {
 .btn-success:active,
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
+  background: none;	
   background-color: #74d348;
   border-color: #74d348;
   color: #FFFFFF ;
@@ -1141,7 +1142,7 @@ fieldset[disabled] .btn-info.active {
   border-color: #2489cc;
 }
 .btn-default {
-  background-color: #457BC0;;
+  background-color: #457BC0;
   border-color: #83B9E3;
   color: #fff;
 }
@@ -1151,9 +1152,9 @@ fieldset[disabled] .btn-info.active {
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
   background: none !important;
-  background-color: #457BC0 !important;
-  border-color: #d9dbdd;
-  color: #606265;
+  background-color: #83B9E3 !important;
+  border-color: #457BC0;
+  color: #457BC0;
 }
 .btn-default:active,
 .btn-default.active,
@@ -2785,8 +2786,11 @@ h6 {
 }
 /* Checkbox styles */
 .checkbox-primary input[type="checkbox"]:checked + label::before {
+	background-color: #37669C;
+	/* 
   background-color: #eee;
   border-color: #eee;
+   */
 }
 .checkbox-primary input[type="checkbox"]:checked + label::after {
   color: #fff;
@@ -2938,7 +2942,7 @@ label.error:before {
   border-bottom: none;
 }
 .filter-item a {
-  color: #fff;
+  color: #666;
 }
 .filter-item:last-child {
   border-bottom: 1px solid #83B9E3;
@@ -3021,8 +3025,8 @@ label.error:before {
   height: 28px;
 }
 .social-talk .social-profile img {
-  height: 32px;
-  width: 32px;
+  height: 64px;
+  width: 64px;
   border-radius: 50%;
 }
 .social-talk .text-muted {

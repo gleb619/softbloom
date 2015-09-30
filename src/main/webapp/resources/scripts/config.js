@@ -155,10 +155,6 @@ function fixWrapperHeight() {
     var navigationH = $(".navigation").height();
     var contentH = $(".content").height();
 
-    if(navigationH > 1300){
-    	navigationH = 1500;
-    }
-    
     // Set new height when contnet height is less then navigation
     if (contentH < navigationH) {
         $(".wrapper").css("min-height", navigationH + 'px');

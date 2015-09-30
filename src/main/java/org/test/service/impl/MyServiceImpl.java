@@ -1,8 +1,11 @@
-package org.test.services.impl;
+package org.test.service.impl;
 
+import org.test.dao.LogDao;
 import org.test.entity.Log;
-import org.test.services.MyService;
+import org.test.service.MyService;
+
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;

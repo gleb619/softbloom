@@ -1,4 +1,4 @@
-package org.test.services;
+package org.test.service;
 
 import org.test.entity.Log;
 import java.util.List;

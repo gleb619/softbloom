@@ -1,4 +1,4 @@
-<?page title="Dashboard - ZK Admin"?>
+<?page title="Employee - ZK example app"?>
 <?page viewport="width=device-width, initial-scale=1.0"?>
 
 
@@ -6,6 +6,7 @@
 <?link rel="stylesheet" href="resources/vendor/metisMenu/dist/metisMenu.css" ?>
 <?link rel="stylesheet" href="resources/vendor/animate.css/animate.css" ?>
 <?link rel="stylesheet" href="resources/vendor/bootstrap/dist/css/bootstrap.css" ?>
+<?link rel="stylesheet" href="resources/vendor/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" ?>
 
 <?link rel="stylesheet" href="resources/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" ?>
 <?link rel="stylesheet" href="resources/fonts/pe-icon-7-stroke/css/helper.css" ?>

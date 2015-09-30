@@ -1,3 +1,15 @@
 .hpanel .form-control {
 	color: #666;
 }
+
+.z-button {
+	text-shadow: none !important;
+}
+
+.fa.green {
+	color: #62cb31;
+}
+
+.fa.red {
+	color: #e74c3c;
+}

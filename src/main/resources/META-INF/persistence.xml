@@ -9,6 +9,10 @@
 			<property name="hibernate.connection.username" value="sa" />
 			<property name="hibernate.connection.password" value="" />
 			<property name="hibernate.show_sql" value="true" />
+			<!-- 
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.use_sql_comments" value="true" />
+			-->
 			<property name="hibernate.connection.url" value="jdbc:hsqldb:mem:data/store" />
 			<property name="hibernate.hbm2ddl.auto" value="create" />
 		</properties>

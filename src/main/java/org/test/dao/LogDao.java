@@ -1,4 +1,4 @@
-package org.test.services.impl;
+package org.test.dao;
 
 import org.test.entity.Log;
 import java.util.List;

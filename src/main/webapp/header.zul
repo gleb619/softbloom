@@ -102,9 +102,7 @@
                         <span class="label label-success">4</span>
                     </a>
                     <ul class="dropdown-menu hdropdown animated flipInX">
-                        <div class="title">
-                            You have 4 new messages
-                        </div>
+                        <div class="title label-info">You have 4 new messages</div>
                         <li>
                             <a>
                                 It is a long established.

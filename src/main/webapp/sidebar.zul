@@ -39,11 +39,11 @@
                 <div class="social-talk">
                     <div class="media social-profile clearfix">
                         <a class="pull-left">
-                            <img src="resources/images/a1.jpg" alt="profile-picture"></img>
+                            <img src="resources/images/avatar1.jpg" alt="profile-picture"></img>
                         </a>
 
                         <div class="media-body">
-                            <span class="font-bold">John Novak</span>
+                            <span class="font-bold">Ailsa Novak</span>
                             <small class="text-muted">21.03.2015</small>
                             <div class="social-content small">
                                 Injected humour, or randomised words which don't look even slightly believable.
@@ -54,11 +54,11 @@
                 <div class="social-talk">
                     <div class="media social-profile clearfix">
                         <a class="pull-left">
-                            <img src="resources/images/a3.jpg" alt="profile-picture"></img>
+                            <img src="resources/images/avatar2.jpg" alt="profile-picture"></img>
                         </a>
 
                         <div class="media-body">
-                            <span class="font-bold">Mark Smith</span>
+                            <span class="font-bold">Amalia Smith</span>
                             <small class="text-muted">14.04.2015</small>
                             <div class="social-content">
                                 Many desktop publishing packages and web page editors.
@@ -69,11 +69,11 @@
                 <div class="social-talk">
                     <div class="media social-profile clearfix">
                         <a class="pull-left">
-                            <img src="resources/images/a4.jpg" alt="profile-picture"></img>
+                            <img src="resources/images/avatar3.jpg" alt="profile-picture"></img>
                         </a>
 
                         <div class="media-body">
-                            <span class="font-bold">Marica Morgan</span>
+                            <span class="font-bold">Mark Morgan</span>
                             <small class="text-muted">21.03.2015</small>
 
                             <div class="social-content">
